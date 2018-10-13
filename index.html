@@ -2,25 +2,29 @@
   <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>JavaScript Age Calculator</title>
+        <link rel="stylesheet" type="text/css" href="styling.css">
+        <script src="script.js"></script>
      </head>
      
      <body onload="valueCheck()">
-        <h1>Age Calculator</h1>
-                
-        <p>Input your birth year below to display your age.</p>
+        <div class="page-content">
+            <h1>Age Calculator</h1>
+                    
+            <p>To get started, please input your birth year in the input field below.</p>
+            
+            <br>
+            
+            <input type="number" id="ageInput" placeholder="Birthyear" />
+            
+            <div style="height: 100px;"></div>
+            
+            <button class="submitButton" onclick="getBirthYear()">Submit</button>
+            
+            <p>You are <b id="age"></b> years of age.</p>
+        </div>
         
-        <br>
-        
-        <input type="text" id="ageInput" placeholder="Birthyear" />
-        
-        <br>
-        <br>
-        
-        <button class="submitButton" onclick="getBirthYear()">Submit</button>
-        
-        <p>You are <b id="age"></b> years of age.</p>
-      
      </body>
    </html>
       
