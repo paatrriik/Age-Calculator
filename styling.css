@@ -52,3 +52,29 @@ button:focus {
     width: 60%;
     padding: 10px;
 }
+
+.sentenceWrapper {
+    background-color: #efefef;
+    width: 450px;
+    height: 75px;
+}
+
+.sentence {
+    padding: 10px;
+    font-size: 30pt;
+}
+
+.footer {
+    font-size: 12pt;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #d3d3d3;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #3498db;
+}

@@ -6,6 +6,7 @@
         <title>JavaScript Age Calculator</title>
         <link rel="stylesheet" type="text/css" href="styling.css">
         <script src="script.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
      </head>
      
      <body onload="valueCheck()">
@@ -18,11 +19,19 @@
             
             <input type="number" id="ageInput" placeholder="Birthyear" />
             
-            <div style="height: 100px;"></div>
+            <div style="height: 40px;"></div>
             
             <button class="submitButton" onclick="getBirthYear()">Submit</button>
+
+            <div style="height: 60px;"></div>
             
-            <p>You are <b id="age"></b> years of age.</p>
+            <div class="sentenceWrapper">
+                <p class="sentence">You are <b id="age"></b> years of age.</p>
+            </div>
+
+            <div class="footer">
+                <p>Made with <i style="color: #e74c3c;" class="fas fa-heart"></i> by <a class="link" href="https://github.com/paatrriik">Patrik</a></p>
+            </div>
         </div>
         
      </body>
