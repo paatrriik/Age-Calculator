@@ -10,14 +10,14 @@
      </head>
      
      <body onload="valueCheck()">
-        <div class="page-content">
+        <div id="page-container" class="page-content">
             <h1>Age Calculator</h1>
                     
             <p>To get started, please input your birth year in the input field below.</p>
             
             <br>
             
-            <input type="number" id="ageInput" placeholder="Birthyear" />
+            <input type="number" id="ageInput" min="0" placeholder="Birthyear" />
             
             <div style="height: 40px;"></div>
             
@@ -26,7 +26,7 @@
             <div style="height: 60px;"></div>
             
             <div class="sentenceWrapper">
-                <p class="sentence">You are <b id="age"></b> years of age.</p>
+                <p class="sentence">You are <b style="color: #C08BFF;"id="age"></b> years of age.</p>
             </div>
 
             <div class="footer">
