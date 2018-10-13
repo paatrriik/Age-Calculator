@@ -11,5 +11,10 @@ function getDate() {
 }
 
 function getBirthYear() {
-    document.getElementById('age').innerHTML = getDate() - document.getElementById('ageInput').value;
+    if (document.getElementById('ageInput').value == null) {
+        document.getElementById('age').innerHTML = "--";
+    }
+    else {
+        document.getElementById('age').innerHTML = getDate() - document.getElementById('ageInput').value;
+    }
 }
