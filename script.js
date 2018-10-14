@@ -19,7 +19,7 @@ function getBirthYear() {
         correctAge.setAttribute("style", "display:block");
         notBornYet.setAttribute("style", "display:none");
     }
-    else if (ageInput.value >= getCurrentYear()) {
+    else if (ageInput.value > getCurrentYear()) {
         correctAge.setAttribute("style", "display:none");
         notBornYet.setAttribute("style", "display:block");
     }
