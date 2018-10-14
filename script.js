@@ -4,17 +4,28 @@ function valueCheck() {
     }
 }
 
-function getDate() {
+function getCurrentYear() {
     var d = new Date();
     var n = d.getFullYear();
     return n;
 }
 
 function getBirthYear() {
-    if (document.getElementById('ageInput').value == null) {
+    var ageInput = document.getElementById('ageInput');
+    var correctAge = document.getElementById('correctAge');
+    var notBornYet = document.getElementById('notBornYet');
+    if (ageInput.value == null || ageInput.value.length == 0) {
         document.getElementById('age').innerHTML = "--";
+        correctAge.setAttribute("style", "display:block");
+        notBornYet.setAttribute("style", "display:none");
+    }
+    else if (ageInput.value >= getCurrentYear()) {
+        correctAge.setAttribute("style", "display:none");
+        notBornYet.setAttribute("style", "display:block");
     }
     else {
-        document.getElementById('age').innerHTML = getDate() - document.getElementById('ageInput').value;
+        document.getElementById('age').innerHTML = getCurrentYear() - ageInput.value;
+        correctAge.setAttribute("style", "display:block");
+        notBornYet.setAttribute("style", "display:none");
     }
 }
