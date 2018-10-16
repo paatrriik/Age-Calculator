@@ -2,6 +2,13 @@ function valueCheck() {
     if (document.getElementById('age').value == null) {
         document.getElementById('age').innerHTML = "--";
     }
+
+    var ageInput = document.getElementById('ageInput');
+    ageInput.addEventListener("keyup", function(event) {
+        if (event.key === "Enter") {
+            document.getElementById('submitButton').onclick();
+        }
+    });
 }
 
 function getCurrentYear() {
