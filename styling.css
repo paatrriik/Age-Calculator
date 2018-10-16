@@ -1,9 +1,13 @@
+:root {
+    --border-width: 10px; 
+}
+
 html {
-    height: 100%;
+    height: calc(100% - 2 * var(--border-width));
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI","Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 20pt;
-    border: 10px solid #C08BFF;
+    border: var(--border-width) solid #C08BFF;
 }
 
 h1 {
@@ -60,8 +64,15 @@ button:focus {
 
 .sentenceWrapper {
     background-color: #efefef;
-    width: 450px;
+    width: 500px;
     height: 75px;
+}
+
+.sentenceWrapperNotBornYet {
+    background-color: #efefef;
+    width: 500px;
+    height: 75px;
+    display: none;
 }
 
 .sentence {
