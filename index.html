@@ -17,7 +17,7 @@
             
             <br>
             
-            <input type="number" id="ageInput" min="0" placeholder="Birthyear" />
+            <input type="number" id="ageInput" min="1900" placeholder="Birthyear" />
             
             <div style="height: 40px;"></div>
             
@@ -28,8 +28,8 @@
             <div class="sentenceWrapper" id="correctAge">
                 <p class="sentence">You are <b style="color: #C08BFF;"id="age"></b> years of age.</p>
             </div>
-            <div class="sentenceWrapperNotBornYet" id="notBornYet">
-                <p class="sentence">You haven't been born yet.</p>
+            <div class="sentenceWrapperIncorrect" id="incorrectAge">
+                <p class="sentence" id="incorrectAgeExplanation"></p>
             </div>
 
             <div class="footer">
