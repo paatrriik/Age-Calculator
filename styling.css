@@ -64,14 +64,10 @@ button:focus {
 
 .sentenceWrapper {
     background-color: #efefef;
-    width: 500px;
-    height: 75px;
 }
 
 .sentenceWrapperIncorrect {
     background-color: #efefef;
-    width: 500px;
-    height: 75px;
     display: none;
 }
 
