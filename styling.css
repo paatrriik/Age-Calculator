@@ -64,16 +64,20 @@ button:focus {
 
 .sentenceWrapper {
     background-color: #efefef;
+    margin: 0 0 10px 0;
+    display: inline-block;
 }
 
 .sentenceWrapperIncorrect {
     background-color: #efefef;
+    margin: 0 0 10px 0;
     display: none;
 }
 
 .sentence {
     padding: 10px;
     font-size: 30pt;
+    margin: 0;
 }
 
 .footer {
